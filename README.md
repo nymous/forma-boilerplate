@@ -1,5 +1,5 @@
 Presentation boilerplate
-=====================
+========================
 
 :warning:
 Run `gulp updateRemark` to download latest version of Remark before working.

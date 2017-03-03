@@ -1,7 +1,7 @@
 {
-  "name": "cloudflare",
+  "name": "forma-boilerplate",
   "version": "1.0.0",
-  "description": "Forma Boilerplate",
+  "description": "Presentation boilerplate",
   "main": "index.js",
   "repository": "https://github.com/tikiki/forma-boilerplate",
   "author": "Thomas Gaudin <thomas.gaudin@centraliens-lille.org>",
