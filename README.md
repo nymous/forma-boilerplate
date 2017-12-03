@@ -7,14 +7,13 @@ A small boilerplate to create a presentation using [remark.js](https://remarkjs.
 
 Clone this project, delete the `.git` folder, and start from a fresh boilerplate!
 
-:warning:
-Run `gulp updateRemark` to download latest version of Remark before working.
-:warning:
+⚠️
+Run `npm run update:remark` to download latest version of Remark before working.
+⚠️
 
 Write the `.md` in src, it will be included in the `src/index.html`.
 
-There is a `gulp watch` to run browsersync with auto reload on change.
+There is a `npm run watch` to run browsersync with auto reload on change.
+> Note: If you update the `src/vars.json` file, browersync won't auto-update the presentation; make a dummy-save of `src/index.html` for the build to refresh
 
-`gulp build` compiles everything, and copies assets to `dist/assets`.
-
-Deploy to gh-pages with `gulp deploy`.
+Deploy to gh-pages with `npm run deploy`.
