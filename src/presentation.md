@@ -7,7 +7,7 @@ class: center, middle, inverse
 # Title
 ## Subtitle
 
-#### https://tikiki.github.io/forma-boilerplate
+#### {{{ link }}}
 
 ---
 layout: false
@@ -35,4 +35,4 @@ template: inverse
 
 # The end
 
-### https://tikiki.github.io/forma-boilerplate
+### {{{ link }}}

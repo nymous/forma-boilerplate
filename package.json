@@ -8,13 +8,11 @@
   "license": "MIT",
   "scripts": {
     "clean": "del-cli dist/",
-    "compile:html": "make-dir dist/ && mustache -p src/presentation.md src/vars.json src/index.html > dist/index.html",
-    "compile:css": "make-dir dist/assets/css && catw src/assets/css/stylesheet.css > dist/assets/css",
-    "compile": "npm run compile:html && npm run compile:css",
-    "copyAssets:img": "node scripts/imagesCopy.js",
-    "copyAssets:js": "node scripts/jsCopy.js",
-    "copyAssets": "npm run copyAssets:img && npm run copyAssets:js",
-    "build": "npm run compile && npm run copyAssets",
+    "watch": "gulp watch",
+    "prebuild": "npm run clean",
+    "build": "gulp build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "update:remark": "download https://gnab.github.io/remark/downloads/remark-latest.min.js > src/assets/js/remark.min.js"
   },
   "devDependencies": {
@@ -22,6 +20,9 @@
     "catw": "^1.0.1",
     "del-cli": "^1.1.0",
     "download-cli": "^1.0.5",
+    "gh-pages": "^1.1.0",
+    "gulp": "^3.9.1",
+    "gulp-mustache": "^3.0.0",
     "make-dir-cli": "^1.0.0",
     "mustache": "^2.3.0",
     "recursive-copy": "^2.0.7"
